@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一层灯光控制中心"
+            android:textSize="40sp"
+            android:textColor="@color/font"/>
+    </LinearLayout>
+    <!--按钮的每一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@color/xbj">
+        <!--按钮的每一列-->
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/yi_zw"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@mipmap/sw0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="主卧"
+                android:textSize="20sp"
+                android:textColor="@color/font"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/yi_kw"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@mipmap/sw0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="客卧"
+                android:textSize="20sp"
+                android:textColor="@color/font"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/yi_cw"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@mipmap/sw0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="次卧"
+                android:textSize="20sp"
+                android:textColor="@color/font"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@color/xbj">
+        <!--按钮的每一列-->
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/yi_kt"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@mipmap/sw0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="客厅"
+                android:textSize="20sp"
+                android:textColor="@color/font"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/yi_ct"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@mipmap/sw0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="餐厅"
+                android:textSize="20sp"
+                android:textColor="@color/font"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/yi_ys"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@mipmap/sw0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="浴室"
+                android:textSize="20sp"
+                android:textColor="@color/font"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
