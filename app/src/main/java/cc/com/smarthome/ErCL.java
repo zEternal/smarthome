@@ -17,8 +17,17 @@ public class ErCL extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("com.cc.mqtt_3",0);
+
+        String host = sharedPreferences.getString("url","tcp://shiyan.mqtt.iot.bj.baidubce.com:1883");
+        String userName = sharedPreferences.getString("user","shiyan/esp8266");
+        String passWord = sharedPreferences.getString("pass","5FyadUaBpe0RKi7rWBiJQLj+YMFGbsW0/pHZ55KlqAM=");
+        //String host= "tcp://shiyan.mqtt.iot.bj.baidubce.com:1883";
+        //String userName = "shiyan/esp8266";
+        //String passWord = "5FyadUaBpe0RKi7rWBiJQLj+YMFGbsW0/pHZ55KlqAM=";
         final MqttManager mqttManager = new cc.com.smarthome.MqttManager(this);
-        mqttManager.connect();//连接MQTT服务器
+        mqttManager.connect(host,userName,passWord);//连接MQTT服务器
         setContentView(R.layout.er_cl);
 
         er_cl1k = (Button) findViewById(R.id.er_cl1k);

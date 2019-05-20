@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button c1;
     private Button c2;
+    private Button shezhi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         c1 = (Button) findViewById(R.id.c1) ;
         c2 = (Button) findViewById(R.id.c2) ;
+        shezhi = (Button) findViewById(R.id.shezhi);
+
 
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ErCeng.class);
                 startActivity(intent);
 
+            }
+        });
+
+        shezhi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,SetUp.class);
+                startActivity(intent);
             }
         });
     }

@@ -27,11 +27,20 @@ public class YiD extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        SharedPreferences sharedPreferences = getSharedPreferences("com.cc.mqtt_3",0);
+        // String host= "tcp://shiyan.mqtt.iot.bj.baidubce.com:1883";
+        // String userName = "shiyan/esp8266";
+        // String passWord = "5FyadUaBpe0RKi7rWBiJQLj+YMFGbsW0/pHZ55KlqAM=";
+        String host = sharedPreferences.getString("url","tcp://shiyan.mqtt.iot.bj.baidubce.com:1883");
+        String userName = sharedPreferences.getString("user","shiyan/esp8266");
+        String passWord = sharedPreferences.getString("pass","5FyadUaBpe0RKi7rWBiJQLj+YMFGbsW0/pHZ55KlqAM=");
+
         final MqttManager mqttManager = new cc.com.smarthome.MqttManager(this);
-        mqttManager.connect();//连接MQTT服务器
+        mqttManager.connect(host,userName,passWord);//连接MQTT服务器
 
         //获取sharedPreferences对象
-        SharedPreferences sharedPreferences = getSharedPreferences("com.cc.mqtt_3",0);
+
+
         //获取sharedPreferences数据
         boolean yi_zw_zt1 = sharedPreferences.getBoolean("yi_zw_zt",false);
         boolean yi_kw_zt1 = sharedPreferences.getBoolean("yi_kw_zt",false);

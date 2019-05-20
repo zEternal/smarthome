@@ -15,9 +15,9 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 public class MqttManager {
     public static final String TAG = MqttManager.class.getSimpleName();
 
-    private String host = "tcp://shiyan.mqtt.iot.bj.baidubce.com:1883";
-    private String userName = "shiyan/esp8266";
-    private String passWord = "5FyadUaBpe0RKi7rWBiJQLj+YMFGbsW0/pHZ55KlqAM=";
+   // private String host;// = "tcp://shiyan.mqtt.iot.bj.baidubce.com:1883";
+   // private String userName;// = "shiyan/esp8266";
+    //private String passWord;// = "5FyadUaBpe0RKi7rWBiJQLj+YMFGbsW0/pHZ55KlqAM=";
     private String clientId = "";
     public String pay="chushihua";
     private static MqttManager mqttManager = null;
@@ -29,6 +29,7 @@ public class MqttManager {
 
         //       clientId = "DeviceId-k2rcy0jl28";
         clientId = MqttClient.generateClientId();//根据当前用户的登录名和系统时间返回随机生成的客户端标识符。
+
     }
 
     public MqttManager getInstance(Context context){
@@ -40,8 +41,11 @@ public class MqttManager {
         return null;
     }
 
-    public void connect(){
+    public void connect(String host,String userName,String passWord){
         try{
+            //this.host = host;
+            //this.userName = userName;
+            //this.passWord = passWord;
             //MqttClient()构造函数 创建可用于与MQTT服务器通信的MqttClient。
             //MqttClient(服务器地址+端口，唯一客户端标识，使用内存持久性？)
             client = new MqttClient(host,clientId,new MemoryPersistence());

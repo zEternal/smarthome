@@ -16,15 +16,16 @@
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".YiCeng" />
         <activity android:name=".ErCeng" />
         <activity android:name=".YiD" />
         <activity android:name=".ErCL" />
-
+        <activity android:name=".SetUp"></activity>
     </application>
 
 </manifest>
