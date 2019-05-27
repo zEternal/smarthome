@@ -39,14 +39,17 @@ public class SetUp extends AppCompatActivity {
 
                 SharedPreferences.Editor editor = sharedPreferences.edit();
 
-                editor.putString("url",hosts);
-                editor.putString("user",userNames);
-                editor.putString("pass",passWords);
+                if (hosts.length()>7 && userNames.length()>1 && passWords.length()>2) {
+                    editor.putString("url", hosts);
+                    editor.putString("user", userNames);
+                    editor.putString("pass", passWords);
 
-                editor.apply();
+                    editor.apply();
+                }
 
-                Intent intent = new Intent(SetUp.this, MainActivity.class);
-                startActivity(intent);
+                finish();
+                //Intent intent = new Intent(SetUp.this, MainActivity.class);
+                //startActivity(intent);
             }
         });
     }

@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, YiCeng.class);
                 startActivity(intent);
-
             }
         });
 
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ErCeng.class);
                 startActivity(intent);
-
             }
         });
 
