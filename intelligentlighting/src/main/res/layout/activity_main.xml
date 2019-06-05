@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#6ea8ff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能照明控制系统"
+            android:textSize="40sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度控制"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/b01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度0"/>
+
+        <Button
+            android:id="@+id/b02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度1" />
+
+        <Button
+            android:id="@+id/b03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度2"/>
+
+        <Button
+            android:id="@+id/b04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度3" />
+
+        <Button
+            android:id="@+id/b05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度4"/>
+
+        <Button
+            android:id="@+id/b06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度5" />
+
+        <Button
+            android:id="@+id/b07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度6"/>
+
+        <Button
+            android:id="@+id/b08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度7" />
+
+        <Button
+            android:id="@+id/b09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色变化"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/cr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/cg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绿"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试结果"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/acs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="测试"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:background="#ffdfdf"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/cs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试结果"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|bottom">
+
+            <Button
+                android:id="@+id/sz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
