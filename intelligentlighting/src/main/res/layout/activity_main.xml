@@ -39,96 +39,60 @@
             android:text="亮度控制"
             android:textSize="20dp"/>
 
-        <Button
-            android:id="@+id/b01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度0"/>
+        <com.yhtos.intelligentlighting.VerticalSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:max="19"
+            android:progress="1"/>
 
-        <Button
-            android:id="@+id/b02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度1" />
-
-        <Button
-            android:id="@+id/b03"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度2"/>
-
-        <Button
-            android:id="@+id/b04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度3" />
-
-        <Button
-            android:id="@+id/b05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度4"/>
-
-        <Button
-            android:id="@+id/b06"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度5" />
-
-        <Button
-            android:id="@+id/b07"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度6"/>
-
-        <Button
-            android:id="@+id/b08"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度7" />
-
-        <Button
-            android:id="@+id/b09"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="亮度8" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1"
-        android:gravity="center_horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="颜色变化"
-            android:textSize="20dp"/>
-
-        <Button
-            android:id="@+id/cr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="红"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/cg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="绿"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/cb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="蓝"
-            android:textSize="18dp"/>
 
     </LinearLayout>
+
+
+     <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色变化"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/cr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/cg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝"
+                android:textSize="18dp"/>
+
+            </LinearLayout>
+        </ScrollView>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -172,13 +136,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="right|bottom">
-
+<!--
             <Button
                 android:id="@+id/sz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="设置"/>
-
+-->
         </LinearLayout>
 
 

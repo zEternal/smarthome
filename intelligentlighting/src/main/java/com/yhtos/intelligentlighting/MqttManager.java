@@ -1,6 +1,9 @@
 package com.yhtos.intelligentlighting;
 
+import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
+import android.os.Message;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -116,6 +119,13 @@ public class MqttManager {
             Log.i("","消息从服务器到达");
             String payload = new String(message.getPayload());
             pay=payload;
+
+            Message msg = Message.obtain();
+            Bundle bundle = new Bundle();
+            bundle.putString("payload",payload);
+            msg.setData(bundle);
+            MainActivity.handler.sendMessage(msg);
+
 
         }
     };
